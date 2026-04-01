@@ -1,1 +1,65 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julio Gustavo — Electronics Engineer</title>
+  <meta name="description" content="Personal site of Julio Gustavo — electronics engineer specialising in embedded systems, PCB design, and IoT.">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Julio Gustavo — Electronics Engineer">
+  <meta property="og:description" content="Embedded systems · PCB design · IoT · Signal processing">
+  <meta property="og:url"         content="https://juliogustavo.com">
+  <meta property="og:type"        content="website">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="css/terminal.css">
+</head>
+<body>
+
+<div class="terminal-window">
+
+  <!-- ── TITLE BAR ── -->
+  <div class="terminal-bar">
+    <div class="term-dots">
+      <div class="dot dot-red"></div>
+      <div class="dot dot-yellow"></div>
+      <div class="dot dot-green"></div>
+    </div>
+    <div class="term-title">julio@juliogustavo.com — bash</div>
+  </div>
+
+  <!-- ── NAV ── -->
+  <nav></nav>
+
+  <!-- ── PAGES ──
+       Each section is a .page div with a unique id="page-{name}".
+       To add a new page:
+         1. Add a <div class="page" id="page-yourpage"></div> here
+         2. Add a nav entry in js/main.js buildNav() array
+         3. Add a build function in js/main.js and call it from DOMContentLoaded
+  -->
+
+  <main>
+    <div id="page-home"     class="page"></div>
+    <div id="page-articles" class="page"></div>
+    <div id="page-research" class="page"></div>
+    <div id="page-cv"       class="page"></div>
+    <div id="page-about"    class="page"></div>
+  </main>
+
+</div><!-- .terminal-window -->
+
+<!-- ── STATUS BAR (vim-style) ── -->
+<div class="status-bar">
+  <span>NORMAL | home</span>
+  <span>juliogustavo.com</span>
+</div>
+
+<!-- ── DATA & LOGIC ── (order matters) -->
+<script src="js/data.js"></script>
+<script src="js/articles.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
